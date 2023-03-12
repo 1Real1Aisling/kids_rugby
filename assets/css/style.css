@@ -102,9 +102,42 @@ h1, h2 {
 
 /*club on home page*/
 
-hr {
-    border-top: 1px solid #3a3a3a;
-    width: 100%;
-    margin: 5px 0;
+.container {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
 }
 
+.column {
+	flex: 1;
+	max-width: 33%;
+	padding: 0 10px;
+	box-sizing: border-box;
+	text-align: center;
+    padding: 20px
+}
+
+.column h2 {
+	font-size: 20px;
+	font-weight: bold;
+	margin-top: 0;
+}
+
+.column p {
+	font-size: 16px;
+	line-height: 1.5;
+	margin-bottom: 0;
+}
+
+#right_column {
+    float: right;
+    margin-top: 0;
+}
+
+#left_column {
+    float: left;
+}
+
+#mid_column {
+    margin: 0 auto
+}
