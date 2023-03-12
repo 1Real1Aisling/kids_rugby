@@ -141,13 +141,111 @@ h1, h2 {
     margin: 0 auto
 }
 
+/* How to get involved */
+
+#involved {
+    text-align: center;
+}
+
+#involved-intro {
+    
+    color: red;
+    font-size: 160%;
+    margin: 50px auto
+}
+
+#intro {
+    margin: 0 auto;
+    font-size: 16px;
+    line-height: 1.5;
+    max-width: 33%;
+    
+}
+    .container-involved {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    .column {
+        flex: 1;
+        max-width: 33%;
+        padding: 0 10px;
+        box-sizing: border-box;
+        text-align: center;
+        padding: 20px
+    }
+    
+    .column h2 {
+        font-size: 20px;
+        font-weight: bold;
+        margin-top: 0;
+    }
+    
+    .column p {
+        font-size: 16px;
+        line-height: 1.5;
+        margin-bottom: 0;
+    }
+    
+    #right_involved {
+        float: right;
+        margin-top: 0;
+    }
+    
+    #left_involved {
+        float: left;
+    }
+    
+    #mid_involved {
+        margin: 0 auto
+}
+
+/*involved images*/
+
+#intro1 {
+    background-image: url('../images/rugby1.jpg');
+    background-repeat: no-repeat;
+    float: left;
+    width: 33%;
+    padding: 10px;
+    position: absolute;
+	
+}
+
+#intro2 {
+    background-image: url('../images/rugby2.jpg');
+    background-repeat: no-repeat;
+    width: 33%;
+    margin: 0 auto;
+    margin-bottom: 0;
+    padding: 0 10px;
+	box-sizing: border-box;
+    position: relative;
+}
+
+#intro3 {
+    background-image: url('../images/rugby3.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 33%;
+    float: right;
+    margin-bottom: 0;
+    padding: 0 10px;
+	box-sizing: border-box;
+    position: relative;
+}
+
 /* footer */
 
 .footer-style {
-    padding:40px 0;
+    height: 300px;
+    padding: 0;
     background-color:grey;
     color: white;
-  }
+    position: absolute;
+    width: 100%;
+    }
   
   .footer-style ul {
     padding:0;
@@ -175,6 +273,7 @@ h1, h2 {
   .footer-style .social {
     text-align:center;
     padding-bottom:25px;
+    padding-top: 25px;
   }
   
   .footer-style .social > a {
@@ -205,3 +304,5 @@ h1, h2 {
     color:#ffffff;
     margin-bottom:0;
   }
+
+  
