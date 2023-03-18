@@ -252,4 +252,21 @@ h1, h2 {
     margin-bottom:0;
   }
 
+  /* about page*/
+
+  #about-test {
+    padding: 1rem 0;
+    margin-bottom: 30px;
+    height: 300px;
+    background: url('../images/RDS.jpg') center center / cover no-repeat fixed;
+  }
+
+  #testimonial {
+    margin-top:15px;
+    text-align:center;
+    font-size:13px;
+    color:grey;
+    background-color: bisque;
+    margin-bottom:0;
+  }
   
