@@ -12,13 +12,14 @@ h1, h2 {
     font-family: Montserrat, sans-serif;
     text-transform: uppercase;
     letter-spacing: 0.1rem;
-    color: grey
+    color: grey;
  }
 
  #logo {
     float: left;
     font-size: 280%;
     margin-left: 1vw;
+    line-height: 0.5vh;
  }
 
 /* navigation links */
@@ -27,9 +28,6 @@ h1, h2 {
     font-size: 110%;
     letter-spacing: 0.1rem;
     line-height: 6vh;
-}
-#logo {
-    line-height: 0.5vh;
 }
 
 #menu li {
@@ -44,11 +42,11 @@ h1, h2 {
 }
 
 #menu a:hover {
-    border-bottom: 1vh solid #3a3a3a
+    border-bottom: 1vh solid #3a3a3a;
 }
 
 .active {
-    border-bottom: 1vh solid #3a3a3a
+    border-bottom: 10px solid #3a3a3a;
 }
 
 /* hero image */
@@ -197,7 +195,7 @@ h1, h2 {
     padding:0;
     list-style:none;
     text-align:center;
-    font: size 1.8vh;
+    font-size: 1.8vh;
     line-height:1.6;
     margin-bottom:0;
   }
@@ -540,16 +538,26 @@ h1, h2 {
     text-align: center;
     line-height: 4vh;
   }
+}
 
-  .left_test, .mid_test, .right_test {
-    float: none;
-    margin: 0;
-    display: block;
+/* For medum screen sizes from 950px wide and down */
+
+@media screen and (max-width: 950px) {
+  #menu {
+    clear: left;
+    float: left;
+    margin-left: 30px;
+    margin-bottom: 20px;
+    line-height: 25px;
   }
-  
-  #column {
+
+  #cover-text {
+    float: left;
+  }
+
+  .mid_column, .right_column, .left_column {
     float: none;
-    margin: 0;
-    display: block;
+    margin: 1vh auto;
+    max-width: 80vw;
   }
 }
