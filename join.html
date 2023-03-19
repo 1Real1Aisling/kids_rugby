@@ -9,7 +9,7 @@
     
     <link rel="stylesheet" href="assets/css/style.css">
     <link  rel="icon" type="image/png" sizes="72x72" href="assets/images/icons8-rugby-70.png">
-    <title>Youth Rugby - get involved!</title>
+    <title>Youth Rugby - programmes</title>
 </head>
     <body>
         <header>
@@ -42,26 +42,37 @@
             <div id="hero-image"></div>
             <div id="cover-text">
                 <h2>Youth Rugby</h2>
-                <h3>Get involved!</h3>
+                <h3>Programmes</h3>
             </div>
         </section>
-        <section>
-            <h1>Interested in finding out more about Youth Rugby? Complete the form and a member of the coaching team will be in touch soon.</h1>
+        <section id="form-intro">
+            <h1 id="mid_column">Interested in finding out more about Youth Rugby?</h1>
+            <p>Complete the short form below, giving us some more information about your query and a member of the coaching team will be in touch soon.</p>
+        </section>
+        <section id="form-container">
             <form method="POST" action="https://formdump.codeinstitute.net">
+                <fieldset>
+                    <legend><h2>About you</h2></legend>
                 <div>
                     <label for="first-name">First name:</label>
-                    <input type="text" id="first-name" name="first-name"/>
+                    <input type="text" id="first-name" name="first-name" required/>
                 </div>
+                <br>
                 <div>
                     <label for="surname">Surname:</label>
-                    <input type="text" id="surname" name="surname"/>
+                    <input type="text" id="surname" name="surname" required/>
+                </div>
+                <br>
                 <div>
                     <label for="email">Email address:</label>
-                    <input type="email" id="email" name="email-address"/>
-                </div>    
+                    <input type="email" id="email" name="email-address" required/>
+                </div>
+                <br>   
                 <div>
                     <label for="county">County:</label>
-                    <select class="form" id="county" name="county"/>
+                    <input list="counties" class="form-text" id="county" name="county" type="text" required/>
+                    
+                    <datalist id="counties"/>
                         <option value="Antrim">Antrim</option>
                         <option value="Armagh">Armagh</option>
                         <option value="Carlow">Carlow</option>
@@ -94,42 +105,78 @@
                         <option value="Westmeath">Westmeath</option>
                         <option value="Wexford">Wexford</option>
                         <option value="Wicklow">Wicklow</option>
-                    </select>
+                    </datalist>
                 </div>
-                <div>
+                <br>
+                    <div>
                     <label for="town">Town:</label>
-                    <input type="text" id="town" name="town"/>
+                    <input type="text" id="town" name="town" required/>
                 </div>
+            </fieldset>
+            <fieldset>
+                <legend><h2>Progamme(s) of interest</h2></legend>
                 <div>
-                <h2>Progamme(s) of interest</h2>
+                <p>Selecting any of the programmes that are of interest to you you. This will give you the inside track on everything happening in the world of youth rugby.</p>
+                <p>Please select at least <u>ONE</u> programme</p>
+                    <input type="checkbox" id="programme1" name="mini-rugby"/>    
                     <label for="programme1">Mini rugby</label>
-                    <input type="button" id="programme1" name="mini-rugby"/>
+                    <br>
+                    <input type="checkbox" id="programme2" name="youth-rugby"/>
                     <label for="programme2">Youth rugby</label>
-                    <input type="button" id="programme2" name="youth-rugby"/>
+                    <br>
+                    <input type="checkbox" id="programme3" name="schools-rugby"/>
                     <label for="programme3">Schools rugby</label>
-                    <input type="button" id="programme3" name="schools-rugby"/>
+                    
+                    <br>
+                    <input type="checkbox" id="programme4" name="girls-rugby"/>
                     <label for="programme4">Girls rugby</label>
-                    <input type="button" id="programme4" name="girls-rugby"/>
+                    
+                    <br>
+                    <input type="checkbox" id="programme5" name="prov-academy"/>
                     <label for="programme5">Provinical Academy</label>
-                    <input type="button" id="programme5" name="prov-academy"/>
+                    
+                    <br>
+                    <input type="checkbox" id="programme6" name="girls-dev"/>
                     <label for="programme6">Girls Rugby Development Squad</label>
-                    <input type="button" id="programme6" name="girls-dev"/>
+                    
                 </div>
-                <div>
+                <br>
+            <div>
                     <label for="moreinfo">Please feel free to include more information about your query:</label>
                     <br>
                     <textarea class="form" name="moreinfo" id="moreinfo" placeholder="More details" rows="10" cols="40"></textarea>
-                </div>
-                <div>
-                    <label for="termsagree">You acknowledge that you have read and agree to our Terms and Conditions and Privacy Policy</label>
-                    <input type="checkbox" id="termsagree" name="termsagree"/>
-                    
-                </div>
-                <div>
-                <input type="submit" name="Submit"/>
-                <input type="reset" value="Start again"/>
+                    <br>
             </div>
-        </form>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <div>
+                    <input type="checkbox" id="termsagree" name="termsagree" value="yes" checked/>
+                    <label for="termsagree">You acknowledge that you have read and agree to our Terms and Conditions and Privacy Policy</label>
+            </div>
+            <br>
+            <br>
+            <div>
+                    <input type="submit" name="Submit"/>
+                    <input type="reset" value="Start again"/>
+
+            </div>
+                
+            </form>
+            </fieldset>
+        </section>
+       
+        <hr>
        <section>
         <div class="image-container">
             <img src="../assets/images/rugby1.jpg" alt="Three teenagers in Ireland rugby jerseys in a line">
