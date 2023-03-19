@@ -60,7 +60,7 @@ h1, h2 {
 }
 
 #cover-text, #cover-text h2 {
-    color: red;
+    color: white;
 }
 
 #hero-image {
@@ -70,22 +70,20 @@ h1, h2 {
 }
 
 #cover-text {
-    font-size: 130%;
-    color: red;
+    font-size: 150%;
+    color: white;
     font-family: Montserrat, sans-serif;
     text-transform: uppercase;
     letter-spacing: 4px;
 
-    width: 300px;
+    width: 500px;
     height: 200px;
 
     padding-top: 40px;
     padding-left: 10px;
 
-    background-color: rgba(255, 255, 255, 0.7);
-
-    bottom: 30px;
-    right: 150px;
+    bottom: 100px;
+    right: 0;
 
     position: absolute;
 
@@ -119,16 +117,16 @@ h1, h2 {
 	margin-bottom: 0;
 }
 
-#right_column {
+.right_age {
     float: right;
     margin-top: 0;
 }
 
-#left_column {
+.left_who {
     float: left;
 }
 
-#mid_column {
+.mid_what {
     margin: 0 auto
 }
 
@@ -142,7 +140,7 @@ h1, h2 {
     text-align: center;
     }
 
-#intro {
+.intro {
     margin: 50px auto;
     font-size: 18px;
     line-height: 1.5;
@@ -261,7 +259,25 @@ h1, h2 {
     background: url('../images/rugbyball.jpg') center center / cover no-repeat fixed;
   }
 
-  #testimonial {
+  #mid_about {
+    margin: 0 auto
+}
+
+  #right_column {
+    float: right;
+    margin-top: 0;
+  
+}
+    
+#left_column {
+    float: left;
+}
+
+#mid_column {
+  margin: 0 auto
+}
+    
+ #testimonial {
     margin-top:15px;
     text-align:center;
     font-size:13px;
@@ -269,6 +285,20 @@ h1, h2 {
     background-color: bisque;
     margin-bottom:0;
   }
+
+#right_test {
+    float: right;
+    margin-top: 0;
+  
+}
+    
+#left_test{
+    float: left;
+}
+
+#mid_test {
+  margin: 0 auto
+}
   
   /* programmes*/
 #prog-image {
@@ -292,7 +322,35 @@ h1, h2 {
     margin: 20px 150px;
 }
 
-#prog-intro {
+#prog-right-box1 {
+	background-color: rgba(255, 255, 255, 0.8);
+    position: relative;
+    float: right;
+    margin: 20px 150px;
+}
+
+#prog-left-box1 {
+	background-color: rgba(255, 255, 255, 0.8);
+    position: relative;
+    float: left;
+    margin: 20px 150px;
+}
+
+#prog-right-box2 {
+	background-color: rgba(255, 255, 255, 0.8);
+    position: relative;
+    float: right;
+    margin: 20px 150px;
+}
+
+#prog-left-box2 {
+	background-color: rgba(255, 255, 255, 0.8);
+    position: relative;
+    float: left;
+    margin: 20px 150px;
+}
+
+.prog-intro {
   margin: 50px auto;
     font-size: 18px;
     line-height: 1.5;
@@ -307,8 +365,14 @@ h1, h2 {
     height: 1760px;
     background: url('../images/rugbyball.jpg') center center / cover no-repeat fixed;
 }
-
-#circle-container {
+.coach-intro {
+  margin: 50px auto;
+    font-size: 18px;
+    line-height: 1.5;
+    max-width: 60%;
+    text-align: center;
+}
+.circle-container {
 	    width: 300px;
 	    height: 300px;
 	    padding: 30px;
@@ -319,6 +383,45 @@ h1, h2 {
 	    margin: 0 auto;
 	}
 	
+  #coach-right-box {
+    background-color: rgba(255, 255, 255, 0.8);
+      position: relative;
+      float: right;
+      margin: 20px 150px;
+  }
+  
+  #coach-left-box {
+    background-color: rgba(255, 255, 255, 0.8);
+      position: relative;
+      float: left;
+      margin: 20px 150px;
+  }
+  #coach-right-box1 {
+    background-color: rgba(255, 255, 255, 0.8);
+      position: relative;
+      float: right;
+      margin: 20px 150px;
+  }
+  
+  #coach-left-box1 {
+    background-color: rgba(255, 255, 255, 0.8);
+      position: relative;
+      float: left;
+      margin: 20px 150px;
+  }
+  #coach-right-box2 {
+    background-color: rgba(255, 255, 255, 0.8);
+      position: relative;
+      float: right;
+      margin: 20px 150px;
+  }
+  
+  #coach-left-box2 {
+    background-color: rgba(255, 255, 255, 0.8);
+      position: relative;
+      float: left;
+      margin: 20px 150px;
+  }
 
 	#circle-cover-soc {
 	    background: url('../images/soc (2).jpg') no-repeat center center;

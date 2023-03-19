@@ -9,7 +9,7 @@
     
     <link rel="stylesheet" href="assets/css/style.css">
     <link  rel="icon" type="image/png" sizes="72x72" href="assets/images/icons8-rugby-70.png">
-    <title>Youth Rugby - programmes</title>
+    <title>Youth Rugby - join us</title>
 </head>
     <body>
         <header>
@@ -19,20 +19,20 @@
             <nav id="menu">
                     <ul>
                         <li>
-                            <a href="join.html">Join us</a>
+                            <a href="join.html" aria-label="Opens the join us page (stays in website)">Join us</a>
                         </li>
                         <li>
-                            <a href="coaches.html">Team coaches</a>
+                            <a href="coaches.html" aria-label="Opens the page with coaches biographies and photos (stays in website)">Team coaches</a>
                         </li>
                         <li>
-                            <a href="programmes.html">Programmes</a>
+                            <a href="programmes.html" aria-label="Opens the page with details of rugby programmes in the club (stays in website)">Programmes</a>
                         </li>
                         <li>
-                            <a href="about.html">About</a>
+                            <a href="about.html" aria-label="Opens the page with more details about Youth Rugby (stays in website)">About</a>
                         </li>
                         <li>
-                            <a href="index.html">Home</a>
-                        </li>                    
+                            <a href="index.html" aria-label="Opens the page with general information about Youth Rugby (stays in website)">Home</a>
+                        </li>               
                                               
                     </ul>
             </nav>
@@ -42,11 +42,11 @@
             <div id="hero-image"></div>
             <div id="cover-text">
                 <h2>Youth Rugby</h2>
-                <h3>Programmes</h3>
+                <h3>Join us</h3>
             </div>
         </section>
         <section id="form-intro">
-            <h1 id="mid_column">Interested in finding out more about Youth Rugby?</h1>
+            <h2 id="mid_column">Interested in finding out more about Youth Rugby?</h2>
             <p>Complete the short form below, giving us some more information about your query and a member of the coaching team will be in touch soon.</p>
         </section>
         <section id="form-container">
@@ -55,24 +55,24 @@
                     <legend><h2>About you</h2></legend>
                 <div>
                     <label for="first-name">First name:</label>
-                    <input type="text" id="first-name" name="first-name" required/>
+                    <input type="text" id="first-name" name="first-name" required>
                 </div>
                 <br>
                 <div>
                     <label for="surname">Surname:</label>
-                    <input type="text" id="surname" name="surname" required/>
+                    <input type="text" id="surname" name="surname" required>
                 </div>
                 <br>
                 <div>
                     <label for="email">Email address:</label>
-                    <input type="email" id="email" name="email-address" required/>
+                    <input type="email" id="email" name="email-address" required>
                 </div>
                 <br>   
                 <div>
                     <label for="county">County:</label>
-                    <input list="counties" class="form-text" id="county" name="county" type="text" required/>
+                    <input list="counties" class="form-text" id="county" name="county" type="text" required>
                     
-                    <datalist id="counties"/>
+                    <datalist id="counties">
                         <option value="Antrim">Antrim</option>
                         <option value="Armagh">Armagh</option>
                         <option value="Carlow">Carlow</option>
@@ -110,7 +110,7 @@
                 <br>
                     <div>
                     <label for="town">Town:</label>
-                    <input type="text" id="town" name="town" required/>
+                    <input type="text" id="town" name="town" required>
                 </div>
             </fieldset>
             <fieldset>
@@ -118,25 +118,25 @@
                 <div>
                 <p>Selecting any of the programmes that are of interest to you you. This will give you the inside track on everything happening in the world of youth rugby.</p>
                 <p>Please select at least <u>ONE</u> programme</p>
-                    <input type="checkbox" id="programme1" name="mini-rugby"/>    
+                    <input type="checkbox" id="programme1" name="mini-rugby">    
                     <label for="programme1">Mini rugby</label>
                     <br>
-                    <input type="checkbox" id="programme2" name="youth-rugby"/>
+                    <input type="checkbox" id="programme2" name="youth-rugby">
                     <label for="programme2">Youth rugby</label>
                     <br>
-                    <input type="checkbox" id="programme3" name="schools-rugby"/>
+                    <input type="checkbox" id="programme3" name="schools-rugby">
                     <label for="programme3">Schools rugby</label>
                     
                     <br>
-                    <input type="checkbox" id="programme4" name="girls-rugby"/>
+                    <input type="checkbox" id="programme4" name="girls-rugby">
                     <label for="programme4">Girls rugby</label>
                     
                     <br>
-                    <input type="checkbox" id="programme5" name="prov-academy"/>
+                    <input type="checkbox" id="programme5" name="prov-academy">
                     <label for="programme5">Provinical Academy</label>
                     
                     <br>
-                    <input type="checkbox" id="programme6" name="girls-dev"/>
+                    <input type="checkbox" id="programme6" name="girls-dev">
                     <label for="programme6">Girls Rugby Development Squad</label>
                     
                 </div>
@@ -144,7 +144,7 @@
             <div>
                     <label for="moreinfo">Please feel free to include more information about your query:</label>
                     <br>
-                    <textarea class="form" name="moreinfo" id="moreinfo" placeholder="More details" rows="10" cols="40"></textarea>
+                    <textarea class="form" name="moreinfo" id="moreinfo" placeholder="If there is something specific yuou would like to know, please provide details here" rows="10" cols="40"></textarea>
                     <br>
             </div>
             <br>
@@ -161,58 +161,61 @@
             <br>
             <br>
             <div>
-                    <input type="checkbox" id="termsagree" name="termsagree" value="yes" checked/>
+                    <input type="checkbox" id="termsagree" name="termsagree" value="yes" checked>
                     <label for="termsagree">You acknowledge that you have read and agree to our Terms and Conditions and Privacy Policy</label>
             </div>
             <br>
             <br>
             <div>
-                    <input type="submit" name="Submit"/>
-                    <input type="reset" value="Start again"/>
+                    <input type="submit" name="Submit">
+                    <input type="reset" value="Start again">
 
             </div>
                 
-            </form>
             </fieldset>
+        </form>
         </section>
        
         <hr>
-       <section>
+       
         <div class="image-container">
             <img src="../assets/images/rugby1.jpg" alt="Three teenagers in Ireland rugby jerseys in a line">
             <img src="../assets/images/TadhgRugby2.jpg" alt="Young boy in Leinster jersey celebrating with fist pump">
             <img src="../assets/images/rugby3.jpg" alt="Group of children in rugby jerseys having a water fight">
           </div>
-       </section>
-    <div class="footer-style">
+       
+       <div class="footer-style">
         <footer>
-            <div class="social">
-                <li>
-                    <a href="https://facebook.com" target="_blank" rel="noopener"
-                        aria-label="Visit our Facebook page (opens in a new tab)"><i class="fab fa-facebook"></i></a>
-                </li>
-                <li>
-                    <a href="https://twitter.com" target="_blank" rel="noopener"
-                        aria-label="Visit our Twitter page (opens in a new tab)"><i class="fab fa-twitter-square"></i></a>
-                </li>
-                <li>
-                    <a href="https://youtube.com" target="_blank" rel="noopener"
-                        aria-label="Visit our YouTube page (opens in a new tab)"><i class="fab fa-youtube-square"></i></a>
-                </li>
-                <li>
-                    <a href="https://instagram.com" target="_blank" rel="noopener"
-                        aria-label="Visit our Instagram page (opens in a new tab)"><i class="fab fa-instagram"></i></a>
-            <ul class="list-inline">
-                <li class="list-inline-item"><a href="index.html">Home</a></li>
-                <li class="list-inline-item"><a href="about.html">About</a></li>
-                <li class="list-inline-item"><a href="programmes.html">Programmes</a></li>
-                <li class="list-inline-item"><a href="coaches.html">Team coaches</a></li>
-                <li class="list-inline-item"><a href="join.html">Join us</a></li>
-            </ul>
+            <div>
+                <ul class="social">
+                    <li>
+                        <a href="https://facebook.com" target="_blank" rel="noopener"
+                            aria-label="Visit our Facebook page (opens in a new tab)"><i class="fab fa-facebook"></i></a>
+                    </li>
+                    <li>
+                        <a href="https://twitter.com" target="_blank" rel="noopener"
+                            aria-label="Visit our Twitter page (opens in a new tab)"><i class="fab fa-twitter-square"></i></a>
+                    </li>
+                    <li>
+                        <a href="https://youtube.com" target="_blank" rel="noopener"
+                            aria-label="Visit our YouTube page (opens in a new tab)"><i class="fab fa-youtube-square"></i></a>
+                    </li>
+                    <li>
+                        <a href="https://instagram.com" target="_blank" rel="noopener"
+                            aria-label="Visit our Instagram page (opens in a new tab)"><i class="fab fa-instagram"></i></a>
+                    </li>
+                </ul>        
+                <ul class="list-inline">
+                    <li class="list-inline-item"><a href="index.html">Home</a></li>
+                    <li class="list-inline-item"><a href="about.html">About</a></li>
+                    <li class="list-inline-item"><a href="programmes.html">Programmes</a></li>
+                    <li class="list-inline-item"><a href="coaches.html">Team coaches</a></li>
+                    <li class="list-inline-item"><a href="join.html">Join us</a></li>
+                </ul>
+            </div>
             <p class="copyright">Youth Rugby © 2023</p>
-            
         </footer>
-    </div>
+    </div> 
 
         <!-- font awesome script - doesnt slow down the load speed here -->
         <script src="https://kit.fontawesome.com/e59bdfefef.js" crossorigin="anonymous"></script>
