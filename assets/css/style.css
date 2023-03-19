@@ -351,3 +351,11 @@ h1, h2 {
   height: 100%;
   border-radius: 50%;
 }
+
+/*join form */
+
+.form {
+  font-family: Montserrat, sans-serif;
+  font-weight: 300;
+  color: grey;
+}
