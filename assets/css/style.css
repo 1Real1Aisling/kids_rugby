@@ -11,31 +11,31 @@
 h1, h2 {
     font-family: Montserrat, sans-serif;
     text-transform: uppercase;
-    letter-spacing: 4px;
+    letter-spacing: 0.1rem;
     color: grey
  }
 
  #logo {
     float: left;
     font-size: 280%;
-    margin-left: 30px;
+    margin-left: 1vw;
  }
 
 /* navigation links */
 
 #menu {
     font-size: 110%;
-    letter-spacing: 4px;
-    line-height: 60px;
+    letter-spacing: 0.1rem;
+    line-height: 6vh;
 }
 #logo {
-    line-height: 5px;
+    line-height: 0.5vh;
 }
 
 #menu li {
     float: right;
     list-style-type: none;
-    margin-right: 30px
+    margin-right: 3vw;
 }
 
 #menu a {
@@ -44,16 +44,16 @@ h1, h2 {
 }
 
 #menu a:hover {
-    border-bottom: 1px solid #3a3a3a
+    border-bottom: 1vh solid #3a3a3a
 }
 
 .active {
-    border-bottom: 1px solid #3a3a3a
+    border-bottom: 1vh solid #3a3a3a
 }
 
 /* hero image */
 #hero-outer {
-    height: 450px;
+    height: 45vh;
     width: 100%;
     overflow: hidden;
     position: relative;
@@ -64,26 +64,27 @@ h1, h2 {
 }
 
 #hero-image {
-    height: 600px;
+    height: 60vh;
     width: 100%;
     background: url('../images/rugby_hero_image2.jpg') no-repeat center center;
 }
 
 #cover-text {
-    font-size: 150%;
+    font-size: 2vw;
     color: white;
     font-family: Montserrat, sans-serif;
     text-transform: uppercase;
-    letter-spacing: 4px;
+    letter-spacing: 0.4rem;
 
-    width: 500px;
-    height: 200px;
+    width: 50vw;
+    height: 20vh;
+    
+    padding-top: 8vw;
+    margin-left: 0.5vw;
+        
 
-    padding-top: 40px;
-    padding-left: 10px;
-
-    bottom: 100px;
-    right: 0;
+    bottom: 90%;
+    left: 0.5vw;
 
     position: absolute;
 
@@ -99,20 +100,20 @@ h1, h2 {
 .column {
     flex: 1;
     max-width: 33%;
-    padding: 0 10px;
+    padding: 0 1vw;
     box-sizing: border-box;
     text-align: center;
-    padding: 20px
+    padding: 2vw
 }
 
 .column h2 {
-	font-size: 22px;
+	font-size: 2.2vh;
 	font-weight: bold;
 	margin-top: 0;
 }
 
 .column p {
-	font-size: 18px;
+	font-size: 1.8vh;
 	line-height: 1.5;
 	margin-bottom: 0;
 }
@@ -136,13 +137,13 @@ h1, h2 {
     
     color: red;
     font-size: 160%;
-    margin: 20px auto;
+    margin: 2vh auto;
     text-align: center;
     }
 
 .intro {
-    margin: 50px auto;
-    font-size: 18px;
+    margin: 5vh auto;
+
     line-height: 1.5;
     max-width: 33%;
     text-align: center;
@@ -184,7 +185,7 @@ h1, h2 {
 /* footer */
 
 .footer-style {
-    height: 300px;
+    height: 30vh;
     padding: 0;
     background-color:grey;
     color: white;
@@ -196,13 +197,13 @@ h1, h2 {
     padding:0;
     list-style:none;
     text-align:center;
-    font-size:18px;
+    font: size 1.8vh;
     line-height:1.6;
     margin-bottom:0;
   }
   
   .footer-style li {
-    padding:0 10px;
+    padding:0 1vh;
   }
   
   .footer-style ul a {
@@ -217,20 +218,20 @@ h1, h2 {
   
   .footer-style .social {
     text-align:center;
-    padding-bottom:25px;
-    padding-top: 25px;
+    padding-bottom:2.5vh;
+    padding-top: 2.5vh;
   }
   
   .footer-style .social > a {
-    font-size:24px;
-    width:40px;
-    height:40px;
-    line-height:40px;
+    font-size:2.4vh;
+    width:4vw;
+    height:4vh;
+    line-height:4vh;
     display:inline-block;
     text-align:center;
     border-radius:50%;
     border:1px solid #ccc;
-    margin:0 8px;
+    margin:0 0.8vh;
   }
 
   .social > li {
@@ -243,9 +244,9 @@ h1, h2 {
   }
   
   .footer-style .copyright {
-    margin-top:15px;
+    margin-top:1.5vh;
     text-align:center;
-    font-size:13px;
+    font-size:1.3vh;
     color:#ffffff;
     margin-bottom:0;
   }
@@ -254,8 +255,8 @@ h1, h2 {
 
   #about-test {
     padding: 1rem 0;
-    margin-bottom: 30px;
-    height: 300px;
+    margin-bottom: 3vh;
+    height: 30vh;
     background: url('../images/rugbyball.jpg') center center / cover no-repeat fixed;
   }
 
@@ -278,9 +279,9 @@ h1, h2 {
 }
     
  #testimonial {
-    margin-top:15px;
+    margin-top:1.5vh;
     text-align:center;
-    font-size:13px;
+    font-size:1.3vh;
     color:grey;
     background-color: bisque;
     margin-bottom:0;
@@ -292,7 +293,7 @@ h1, h2 {
   
 }
     
-#left_test{
+#left_test {
     float: left;
 }
 
@@ -303,8 +304,8 @@ h1, h2 {
   /* programmes*/
 #prog-image {
   padding: 1rem 0;
-    margin-bottom: 30px;
-    height: 865px;
+    margin-bottom: 3vh;
+    height: 100vh;
     background: url('../images/rugbyball.jpg') center center / cover no-repeat fixed;
 }
 
@@ -312,47 +313,47 @@ h1, h2 {
 	background-color: rgba(255, 255, 255, 0.8);
     position: relative;
     float: right;
-    margin: 20px 150px;
+    margin: 2vh 15vh;
 }
 
 #prog-left-box {
 	background-color: rgba(255, 255, 255, 0.8);
     position: relative;
     float: left;
-    margin: 20px 150px;
+    margin: 2vh 15vh;
 }
 
 #prog-right-box1 {
 	background-color: rgba(255, 255, 255, 0.8);
     position: relative;
     float: right;
-    margin: 20px 150px;
+    margin: 2vh 15vh;
 }
 
 #prog-left-box1 {
 	background-color: rgba(255, 255, 255, 0.8);
     position: relative;
     float: left;
-    margin: 20px 150px;
+    margin: 2vh 15vh;
 }
 
 #prog-right-box2 {
 	background-color: rgba(255, 255, 255, 0.8);
     position: relative;
     float: right;
-    margin: 20px 150px;
+    margin: 2vh 15vh;
 }
 
 #prog-left-box2 {
 	background-color: rgba(255, 255, 255, 0.8);
     position: relative;
     float: left;
-    margin: 20px 150px;
+    margin: 2vh 15vh;
 }
 
 .prog-intro {
-  margin: 50px auto;
-    font-size: 18px;
+  margin: 5vw auto;
+    font-size: 1.8vh;
     line-height: 1.5;
     max-width: 50%;
     text-align: center;
@@ -361,66 +362,68 @@ h1, h2 {
 /* coaches */
 #coaches-image {
   padding: 1rem 0;
-    margin-bottom: 30px;
-    height: 1760px;
+    margin-bottom: 3vh;
+    height: 210vh;
     background: url('../images/rugbyball.jpg') center center / cover no-repeat fixed;
 }
 .coach-intro {
-  margin: 50px auto;
-    font-size: 18px;
+  margin: 5vh auto;
+    font-size: 1.8vh;
     line-height: 1.5;
     max-width: 60%;
     text-align: center;
 }
 .circle-container {
-	    width: 300px;
-	    height: 300px;
-	    padding: 30px;
-	    border-style: solid;
-	    border-color: #ccc;
-	    border-width: 1px;
-	    border-radius: 50%;
-	    margin: 0 auto;
-	}
+  width: 30vw;
+  max-width: 300px;
+  height: 30vw;
+  max-height: 300px;
+  padding: 3vw;
+  border-style: solid;
+  border-color: #ccc;
+  border-width: 1px;
+  border-radius: 50%;
+  margin: 0 auto;
+}
 	
   #coach-right-box {
     background-color: rgba(255, 255, 255, 0.8);
       position: relative;
       float: right;
-      margin: 20px 150px;
+      margin: 2vh 15vh;
   }
   
   #coach-left-box {
     background-color: rgba(255, 255, 255, 0.8);
       position: relative;
       float: left;
-      margin: 20px 150px;
+      margin: 2vh 15vh;
   }
   #coach-right-box1 {
     background-color: rgba(255, 255, 255, 0.8);
       position: relative;
       float: right;
-      margin: 20px 150px;
+      margin: 2vh 15vh;
   }
   
   #coach-left-box1 {
     background-color: rgba(255, 255, 255, 0.8);
       position: relative;
       float: left;
-      margin: 20px 150px;
+      margin: 2vh 15vh;
   }
   #coach-right-box2 {
     background-color: rgba(255, 255, 255, 0.8);
       position: relative;
       float: right;
-      margin: 20px 150px;
+      margin: 2vh 15vh;
   }
   
   #coach-left-box2 {
     background-color: rgba(255, 255, 255, 0.8);
       position: relative;
       float: left;
-      margin: 20px 150px;
+      margin: 2vh 15vh;
   }
 
 	#circle-cover-soc {
@@ -464,18 +467,18 @@ h1, h2 {
 }
 
 #form-intro {
-  margin: 50px auto;
-    font-size: 18px;
+  margin: 5vw auto;
+    font-size: 1.8vh;
     line-height: 1.5;
     max-width: 60%;
     text-align: center;
 }
 
 .form {
-	width: 700px;
-  padding: 25px;
-	border-radius: 8px;
-	margin: 25px auto;
+	width: 70vw;
+  padding: 2.5vh;
+	border-radius: 0.8vh;
+	margin: 2.5vh auto;
 	background-color: white;
   float: left
 }
@@ -483,6 +486,70 @@ h1, h2 {
 #form-container {
   display: flex;
 	justify-content: center;
-  height: 1000px;
+  height: 100vh;
 }
 
+.field-align {
+  display: flex;
+  width: 40%;
+}
+
+/* Media queries */
+@media screen and (max-width: 1504px) {
+  #prog-right-box, #prog-left-box, #prog-right-box1, #prog-left-box1, #prog-right-box2, #prog-left-box2 {
+    float: none;
+    margin: 1vh auto;
+    max-width: 80vw;
+  }
+  #prog-image {
+    height: auto;
+  }
+
+  #coach-right-box, #coach-left-box, #coach-right-box1, #coach-left-box1, #coach-right-box2, #coach-left-box2 {
+    float: none;
+    margin: 1vh auto;
+    max-width: 80vw;
+  }
+
+  #coaches-image {
+    height: auto;
+  }
+
+  #circle-cover-soc, #circle-cover-fos, #circle-cover-lf, #circle-cover-lm, #circle-cover-por, #circle-cover-sk {
+    float: none;
+    background-size: 40vw;
+  }
+
+  #hero-image {
+    height: 60vh;
+    width: 100%;
+    float: none;
+    margin: 0vh auto;
+  }
+
+  #logo {
+    font-size: 200%;
+    margin-left: 0;
+    margin-right: auto;
+    display: block;
+    text-align: center;
+  }
+
+  #menu {
+    font-size: 90%;
+    text-align: center;
+    line-height: 4vh;
+  }
+
+  .left_test, .mid_test, .right_test {
+    float: none;
+    margin: 0;
+    display: block;
+  }
+  
+  #column {
+    float: none;
+    margin: 0;
+    display: block;
+  }
+}
