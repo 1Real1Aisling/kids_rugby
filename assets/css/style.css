@@ -158,12 +158,10 @@ h1, h2 {
     justify-content: center;
     
 }
-
     
 #right_involved {
     float: right;
     margin-top: 0;
-    
 }
     
 #left_involved {
@@ -271,11 +269,12 @@ h1, h2 {
   #right_column {
     float: right;
     margin-top: 0;
-  
+    background-color: bisque;
 }
     
 #left_column {
     float: left;
+    background-color: bisque;
 }
 
 #mid_column {
@@ -367,7 +366,7 @@ h1, h2 {
 #coaches-image {
   padding: 1rem 0;
     margin-bottom: 3vh;
-    height: 210vh;
+    height: 240vh;
     background: url('../images/rugbyball.jpg') center center / cover no-repeat fixed;
 }
 .coach-intro {
@@ -499,7 +498,7 @@ h1, h2 {
 }
 
 /* Media queries */
-@media screen and (max-width: 1504px) {
+@media screen and (max-width: 1640px) {
   
   #prog-right-box, #prog-left-box, #prog-right-box1, #prog-left-box1, #prog-right-box2, #prog-left-box2 {
     float: none;
@@ -514,6 +513,7 @@ h1, h2 {
     float: none;
     margin: 1vh auto;
     max-width: 80vw;
+    border-bottom: 1vh;
   }
 
   #coaches-image {
@@ -547,7 +547,7 @@ h1, h2 {
   }
 }
 
-/* For medum screen sizes from 950px wide and down */
+/* For medum screen sizes from 1300px wide and down */
 
 @media screen and (max-width: 1300px) {
   #menu {
