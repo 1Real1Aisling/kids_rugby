@@ -81,7 +81,7 @@ h1, h2 {
     margin-left: 0.5vw;
         
 
-    bottom: 90%;
+    bottom: 60%;
     left: 0.5vw;
 
     position: absolute;
@@ -92,12 +92,12 @@ h1, h2 {
 
 .container {
 	display: flex;
-	justify-content: center;
+	width: 100%;
 }
 
 .column {
     flex: 1;
-    max-width: 33%;
+    width: 33%;
     padding: 0 1vw;
     box-sizing: border-box;
     text-align: center;
@@ -117,16 +117,21 @@ h1, h2 {
 }
 
 .right_age {
-    float: right;
-    margin-top: 0;
+  position: relative;
+  float: right;
+  margin: 2vh 15vh;
 }
 
 .left_who {
-    float: left;
+  position: relative;
+  float: left;
+  margin: 2vh 15vh;
 }
 
 .mid_what {
-    margin: 0 auto
+    margin: 0 auto;
+    position: relative;
+    
 }
 
 /* How to get involved */
@@ -137,13 +142,14 @@ h1, h2 {
     font-size: 160%;
     margin: 2vh auto;
     text-align: center;
+    
     }
 
 .intro {
     margin: 5vh auto;
 
     line-height: 1.5;
-    max-width: 33%;
+    max-width: 90%;
     text-align: center;
 }
 
@@ -465,7 +471,7 @@ h1, h2 {
 }
 
 #form-intro {
-  margin: 5vw auto;
+  margin: 2vw auto;
     font-size: 1.8vh;
     line-height: 1.5;
     max-width: 60%;
@@ -476,7 +482,7 @@ h1, h2 {
 	width: 70vw;
   padding: 2.5vh;
 	border-radius: 0.8vh;
-	margin: 2.5vh auto;
+	margin: 1.5vh auto;
 	background-color: white;
   float: left
 }
@@ -484,7 +490,7 @@ h1, h2 {
 #form-container {
   display: flex;
 	justify-content: center;
-  height: 100vh;
+  
 }
 
 .field-align {
@@ -494,6 +500,7 @@ h1, h2 {
 
 /* Media queries */
 @media screen and (max-width: 1504px) {
+  
   #prog-right-box, #prog-left-box, #prog-right-box1, #prog-left-box1, #prog-right-box2, #prog-left-box2 {
     float: none;
     margin: 1vh auto;
@@ -542,7 +549,7 @@ h1, h2 {
 
 /* For medum screen sizes from 950px wide and down */
 
-@media screen and (max-width: 950px) {
+@media screen and (max-width: 1300px) {
   #menu {
     clear: left;
     float: left;
@@ -555,9 +562,23 @@ h1, h2 {
     float: left;
   }
 
-  .mid_column, .right_column, .left_column {
+  #mid_column, #right_column, #left_column {
     float: none;
     margin: 1vh auto;
     max-width: 80vw;
   }
+
+  .container {
+    flex-direction: column;
+    height: auto;
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .column {
+    text-align: center;
+    width: 90%;
+  }
+
 }
