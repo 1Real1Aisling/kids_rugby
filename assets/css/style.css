@@ -20,7 +20,8 @@
     float: left;
     font-size: 280%;
     margin-left: 1vw;
-    line-height: 0.5vh;
+    line-height: 1vh;
+    margin-bottom: 6vh;
   }
 
   /* navigation links */
@@ -28,8 +29,9 @@
   #menu {
     font-size: 150%;
     letter-spacing: 0.1rem;
-    line-height: 6vh;
+    line-height: 4vh;
     font-weight: 600;
+    
   }
 
   #menu li {
@@ -58,7 +60,6 @@
 
   #hero-image {
     height: 60vh;
-    /*width: 100%;*/
     background: url('../images/pexels-patrick-case-3662553_heroimage.jpg') no-repeat center center;
     background-size: cover;
   }
@@ -80,13 +81,13 @@
   }
 
   .column h2 {
-    font-size: 2vh;
+    font-size: 3vh;
     font-weight: bold;
     margin-top: 0;
   }
 
   .column p {
-    font-size: 2vh;
+    font-size: 3vh;
     line-height: 1.5;
     margin-bottom: 0;
   }
@@ -123,31 +124,31 @@
   .intro {
     margin: 5vh auto;
     line-height: 1.5;
-    max-width: 90%;
+    max-width: 80%;
     text-align: center;
-    font-size: 2vh;
+    font-size: 3vh;
   }
 
   .container-involved {
     flex-wrap: wrap;
     justify-content: center;
-    font-size: 2vh;
+    font-size: 3vh;
   }
 
   #right_involved {
     float: right;
     margin-top: 0;
-    font-size: 2vh;
+    font-size: 3vh;
   }
 
   #left_involved {
     float: left;
-    font-size: 2vh;
+    font-size: 3vh;
   }
 
   #mid_involved {
     margin: 0 auto;
-    font-size: 2vh;
+    font-size: 3vh;
   }
 
   /*involved images*/
@@ -177,7 +178,7 @@
     padding: 0;
     list-style: none;
     text-align: center;
-    font-size: 2vh;
+    font-size: 3vh;
     line-height: 1.6;
     margin-bottom: 0;
   }
@@ -345,7 +346,7 @@
 
   .prog-intro {
     margin: 5vw auto;
-    font-size: 2vh;
+    font-size: 3vh;
     line-height: 1.5;
     max-width: 90%;
     text-align: center;
@@ -361,7 +362,7 @@
 
   .coach-intro {
     margin: 5vh auto;
-    font-size: 2vh;
+    font-size: 3vh;
     line-height: 1.5;
     max-width: 80%;
     text-align: center;
@@ -468,7 +469,7 @@
 
   #form-intro {
     margin: 2vw auto;
-    font-size: 2vh;
+    font-size: 3vh;
     line-height: 1.5;
     max-width: 60%;
     text-align: center;
