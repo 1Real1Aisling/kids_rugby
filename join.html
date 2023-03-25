@@ -16,8 +16,8 @@
 <body>
     <section>
         <nav class="navbar">
-
-            <div class="logo">YOUTH RUGBY</div>
+            <a href="index.html">
+                <div class="logo">YOUTH RUGBY</div></a>
 
             <ul class="nav-links">
                 <input type="checkbox" id="checkbox_toggle" />
@@ -60,7 +60,7 @@
             team will be in touch soon.</p>
     </section>
     <section id="form-container">
-        <form method="POST" action="https://formdump.codeinstitute.net">
+        <form method="POST" action="https://1real1aisling.github.io/kids_rugby/thanks.html">
             <fieldset>
                 <legend>
                     <h2>About you</h2>
@@ -133,27 +133,17 @@
                 <div>
                     <p>Select each of the programmes that are of interest to you you. This will give you the inside
                         track on everything happening in the world of youth rugby.</p>
-                    <p>Please select <u>AT LEAST</u> one programme</p>
-                    <input type="checkbox" id="programme1" name="mini-rugby">
-                    <label for="programme1">Mini rugby <small>(Ages 4-7)</small></label>
-                    <br>
-                    <input type="checkbox" id="programme2" name="youth-rugby">
-                    <label for="programme2">Youth rugby <small>(Ages 8-12)</small></label>
-                    <br>
-                    <input type="checkbox" id="programme3" name="schools-rugby">
-                    <label for="programme3">Schools rugby <small>(Ages 13-18)</small></label>
+                    <p>Please select <u>AT LEAST</u> one programme.</p>
+                    <p><small>Hold CTRL to select more than one option.</small></p>
 
-                    <br>
-                    <input type="checkbox" id="programme4" name="girls-rugby">
-                    <label for="programme4">Girls rugby <small>(Ages 13-18)</small></label>
-
-                    <br>
-                    <input type="checkbox" id="programme5" name="prov-academy">
-                    <label for="programme5">Provinical Academy <small>(Ages 16-18)</small></label>
-
-                    <br>
-                    <input type="checkbox" id="programme6" name="girls-dev">
-                    <label for="programme6">Girls Rugby Development Squad <small>(Ages 16-18)</small></label>
+                    <select name="mini-rugby" multiple>
+                        <option value="programme1">Mini rugby (Ages 4-7)</option>
+                        <option value="programme2">Youth rugby (Ages 8-12)</option>
+                        <option value="programme3">Schools rugby (Ages 13-18)</option>
+                        <option value="programme4">Girls rugby (Ages 13-18)</option>
+                        <option value="programme5">Provinical Academy (Ages 16-18)</option>
+                        <option value="programme6">Girls Rugby Development Squad (Ages 16-18)</option>
+                  </select>
 
                 </div>
                 <br>
@@ -179,7 +169,7 @@
                 <br>
                 <br>
                 <div>
-                    <input type="checkbox" id="termsagree" name="termsagree" value="yes" checked>
+                    <input type="radio" id="termsagree" name="termsagree" value="yes">
                     <label for="termsagree">You acknowledge that you have read and agree to our Terms and Conditions and
                         Privacy Policy</label>
                 </div>

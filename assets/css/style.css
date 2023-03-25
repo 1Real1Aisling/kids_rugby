@@ -1,8 +1,7 @@
   @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&family=Oswald:wght@300&display=swap');
 
     * {
-      margin: 0;
-      padding: 0;
+      
       box-sizing: border-box;
   
     }
@@ -55,6 +54,7 @@
   
     .logo {
       font-size: 60px;
+      color:#093145;
   
     }
   
@@ -285,7 +285,7 @@ input[type=checkbox]{
     #about-test {
       padding: 1rem 0;
       margin-bottom: 3vh;
-      height: 30vh;
+      height: 40vh;
       background: url('../images/rugbyball.jpg') center center / cover no-repeat fixed;
     }
   
@@ -515,6 +515,16 @@ input[type=checkbox]{
       display: flex;
       width: 40%;
     }
+
+    select {
+      width: 400px;
+      height: 170px;
+      font-size: 16px;
+      padding: 5px;
+      font-family: Montserrat, sans-serif;
+      font-weight: 300;
+      color: #093145;
+    }
   
     /* Media queries */
     @media screen and (max-width: 1300px) { 
@@ -605,6 +615,7 @@ input[type=checkbox]{
           display: block;
         
         }
+        
         .dropdown {
           left: 50%;
           top: 30px;
@@ -621,7 +632,7 @@ input[type=checkbox]{
   
     /* For medum screen sizes from 1300px wide and down */
   
-    @media screen and (max-width: 950px) {
+    @media screen and (max-width: 1100px) {
       #menu {
         clear: left;
         float: left;
@@ -659,5 +670,9 @@ input[type=checkbox]{
         text-align: center;
         width: 100%;
       }
-  
+      
+      #form-container {
+        display: flex;
+        justify-content: center;
+      }
     }
