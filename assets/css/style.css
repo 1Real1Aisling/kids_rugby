@@ -1,501 +1,704 @@
   @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&family=Oswald:wght@300&display=swap');
 
-    * {
-      
-      box-sizing: border-box;
-  
-    }
-  
-    body {
-      font-family: Montserrat, sans-serif;
-      font-weight: 300;
-      color: #093145;
-    }
-  
-    a {
-      text-decoration: none;
-  
-    }
-  
-    li {
-      list-style: none;
-  
-    }
-  
-    /* headings and logo */
-  
-    h1,
-    h2 {
-      font-family: Montserrat, sans-serif;
-      text-transform: uppercase;
-      letter-spacing: 0.1rem;
-      color: #093145;
-    }
-  
-    /* NAVBAR STYLING STARTS */
-  
-    .navbar {
-      display: flex;
-      align-items: baseline;
-      justify-content: space-between;
-      padding: 20px;
-      background-color: white;
-      color: #093145;
-      font-weight: 600;
-  
-    }
-  
-    .nav-links a {
-      color: #093145;
-  
-    }
-  
-    /* LOGO */
-  
-    .logo {
-      font-size: 60px;
-      color:#093145;
-  
-    }
-  
-    /* NAVBAR MENU */
-  
-    .menu {
-      display: flex;
-      gap: 1em;
-      font-size: 18px;
-  
-    }
-  
-    .menu li:hover {
-      border-radius: 5px;
-      transition: 0.3s ease;
-      border-bottom: 1vh solid bisque;
-  
-    }
-  
-    .menu li {
-  
-      padding: 5px 14px;
-    }
-  
+  * {
+
+    box-sizing: border-box;
+
+  }
+
+  body {
+    font-family: Montserrat, sans-serif;
+    font-weight: 300;
+    color: #093145;
+  }
+
+  a {
+    text-decoration: none;
+
+  }
+
+  li {
+    list-style: none;
+
+  }
+
+  /* headings and logo */
+
+  h1,
+  h2 {
+    font-family: Montserrat, sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    color: #093145;
+  }
+
+  /* NAVBAR STYLING STARTS */
+
+  .navbar {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: white;
+    color: #093145;
+    font-weight: 600;
+
+  }
+
+  .nav-links a {
+    color: #093145;
+
+  }
+
+  /* LOGO */
+
+  .logo {
+    font-size: 60px;
+    color: #093145;
+
+  }
+
+  /* NAVBAR MENU */
+
+  .menu {
+    display: flex;
+    gap: 1em;
+    font-size: 18px;
+
+  }
+
+  .menu li:hover {
+    border-radius: 5px;
+    transition: 0.3s ease;
+    border-bottom: 1vh solid bisque;
+
+  }
+
+  .menu li {
+
+    padding: 5px 14px;
+  }
+
   /*RESPONSIVE NAVBAR MENU STARTS*/
 
-/* CHECKBOX HACK */
+  /* CHECKBOX HACK */
 
-input[type=checkbox]{
-  display: none;
-  
-  } 
-  
+  input[type=checkbox] {
+    display: none;
+
+  }
+
   /*HAMBURGER MENU*/
-  
+
   .hamburger {
     display: none;
     font-size: 24px;
     user-select: none;
-  
+
   }
 
-    /* hero image */
-    #hero-outer {
-      height: 45vh;
-      width: 100%;
-      overflow: hidden;
-      
+  /* hero image */
+  #hero-outer {
+    height: 45vh;
+    width: 100%;
+    overflow: hidden;
+
+  }
+
+  #hero-image {
+    height: 60vh;
+    background: url('../images/pexels-patrick-case-3662553_heroimage.jpg') no-repeat center center;
+    background-size: cover;
+  }
+
+  /*club on home page*/
+
+  .container {
+    display: flex;
+    width: 100%;
+  }
+
+  .column {
+    flex: 1;
+    width: 33.3%;
+    padding: 0 1vw;
+    box-sizing: border-box;
+    text-align: center;
+    padding: 1.3vw;
+  }
+
+  .column h2 {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-top: 0;
+  }
+
+  .column p {
+    font-size: 1.2rem;
+    line-height: 1.5;
+    margin-bottom: 0;
+  }
+
+  .right_age {
+    position: relative;
+    float: right;
+    margin: 2vh 15vh;
+  }
+
+  .left_who {
+    position: relative;
+    float: left;
+    margin: 2vh 15vh;
+  }
+
+  .mid_what {
+    margin: 0 auto;
+    position: relative;
+
+  }
+
+  /* How to get involved */
+
+  #involved-intro {
+
+    color: red;
+    font-size: 160%;
+    margin: 2vh auto;
+    text-align: center;
+
+  }
+
+  .intro {
+    margin: 5vh auto;
+    line-height: 1.5;
+    max-width: 80%;
+    text-align: center;
+    font-size: 1.2rem;
+  }
+
+  .container-involved {
+    flex-wrap: wrap;
+    justify-content: center;
+    font-size: 1.2rem;
+  }
+
+  #right_involved {
+    float: right;
+    margin-top: 0;
+    font-size: 1.2rem;
+  }
+
+  #left_involved {
+    float: left;
+    font-size: 1.2rem;
+  }
+
+  #mid_involved {
+    margin: 0 auto;
+    font-size: 1.2rem;
+  }
+
+  /*involved images*/
+
+  .image-container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .image-container img {
+    width: 33.3%;
+    height: auto;
+  }
+
+  /* footer */
+
+  .footer-style {
+
+    padding: 0;
+    background-color: #093145;
+    color: white;
+    position: absolute;
+    width: 99.9%;
+  }
+
+  .footer-style ul {
+    padding: 0;
+    list-style: none;
+    text-align: center;
+    font-size: 1.0rem;
+    line-height: 1.6;
+    margin-bottom: 0;
+  }
+
+  .footer-style li {
+    padding: 0 1vh;
+  }
+
+  .footer-style ul a {
+    color: white;
+    text-decoration: none;
+
+  }
+
+  .footer-style ul a:hover {
+    color: pink;
+  }
+
+  .footer-style .social {
+    text-align: center;
+    padding-bottom: 2.5vh;
+    padding-top: 2.5vh;
+  }
+
+  .footer-style .social>a {
+    font-size: 1.0rem;
+    width: 4vw;
+    height: 4vh;
+    line-height: 4vh;
+    display: inline-block;
+    text-align: center;
+    border-radius: 50%;
+    border: 1px solid #ccc;
+    margin: 0 0.8vh;
+  }
+
+  .social>li {
+    display: inline;
+    color: white;
+
+  }
+
+  .footer-style .social>a:hover {
+    color: pink;
+  }
+
+  .footer-style .copyright {
+    margin-top: 1.5vh;
+    text-align: center;
+    font-size: 0.8rem;
+    color: #ffffff;
+    margin: 1px;
+  }
+
+  /* about page*/
+
+  #about-test {
+    padding: 1rem 0;
+    margin-bottom: 3vh;
+    height: 40vh;
+    background: url('../images/rugbyball.jpg') center center / cover no-repeat fixed;
+  }
+
+  #mid_about {
+    margin: 0 auto;
+  }
+
+  #right_column {
+    float: right;
+    margin-top: 0;
+    background-color: #093145;
+    color: white;
+  }
+
+  #right_column h2 {
+    color: white;
+  }
+
+  #left_column {
+    float: left;
+    background-color: #093145;
+    color: white;
+  }
+
+  #left_column h2 {
+    color: white;
+  }
+
+  #mid_column {
+    margin: 0 auto
+  }
+
+  #testimonial {
+    margin-top: 1.5vh;
+    text-align: center;
+    font-size: 1.2rem;
+    color: white;
+    background-color: #093145;
+    margin-bottom: 0;
+  }
+
+  #right_test {
+    float: right;
+    margin-top: 0;
+
+  }
+
+  #left_test {
+    float: left;
+  }
+
+  #mid_test {
+    margin: 0 auto
+  }
+
+  /* programmes*/
+  #prog-image {
+    padding: 1rem 0;
+    margin-bottom: 3vh;
+    height: 100vh;
+    background: url('../images/rugbyball.jpg') center center / cover no-repeat fixed;
+  }
+
+  #prog-right-box {
+    background-color: rgba(255, 255, 255, 0.8);
+    position: relative;
+    float: right;
+    margin: 2vh 15vh;
+  }
+
+  #prog-left-box {
+    background-color: rgba(255, 255, 255, 0.8);
+    position: relative;
+    float: left;
+    margin: 2vh 15vh;
+  }
+
+  #prog-right-box1 {
+    background-color: rgba(255, 255, 255, 0.8);
+    position: relative;
+    float: right;
+    margin: 2vh 15vh;
+  }
+
+  #prog-left-box1 {
+    background-color: rgba(255, 255, 255, 0.8);
+    position: relative;
+    float: left;
+    margin: 2vh 15vh;
+  }
+
+  #prog-right-box2 {
+    background-color: rgba(255, 255, 255, 0.8);
+    position: relative;
+    float: right;
+    margin: 2vh 15vh;
+  }
+
+  #prog-left-box2 {
+    background-color: rgba(255, 255, 255, 0.8);
+    position: relative;
+    float: left;
+    margin: 2vh 15vh;
+  }
+
+  .prog-intro {
+    margin: 5vw auto;
+    font-size: 1.2rem;
+    line-height: 1.5;
+    max-width: 90%;
+    text-align: center;
+  }
+
+  /* coaches */
+  #coaches-image {
+    padding: 1rem 0;
+    margin-bottom: 3vh;
+    height: 160vh;
+    background: url('../images/rugbyball.jpg') center center / cover no-repeat fixed;
+  }
+
+  .coach-intro {
+    margin: 5vh auto;
+    font-size: 1.2rem;
+    line-height: 1.5;
+    max-width: 80%;
+    text-align: center;
+  }
+
+  .circle-container {
+    width: 30vw;
+    max-width: 300px;
+    height: 30vw;
+    max-height: 300px;
+    padding: 3vw;
+    border-style: solid;
+    border-color: #ccc;
+    border-width: 1px;
+    border-radius: 50%;
+    margin: 0 auto;
+  }
+
+  #coach-right-box {
+    background-color: rgba(255, 255, 255, 0.8);
+    position: relative;
+    float: right;
+    margin: 2vh 15vh;
+  }
+
+  #coach-left-box {
+    background-color: rgba(255, 255, 255, 0.8);
+    position: relative;
+    float: left;
+    margin: 2vh 15vh;
+  }
+
+  #coach-right-box1 {
+    background-color: rgba(255, 255, 255, 0.8);
+    position: relative;
+    float: right;
+    margin: 2vh 15vh;
+  }
+
+  #coach-left-box1 {
+    background-color: rgba(255, 255, 255, 0.8);
+    position: relative;
+    float: left;
+    margin: 2vh 15vh;
+  }
+
+  #circle-cover-soc {
+    background: url('../images/soc (2).jpg') no-repeat center center;
+    height: 100%;
+    border-radius: 50%;
+  }
+
+  #circle-cover-fos {
+    background: url('../images/fos.jpg') no-repeat center center;
+    height: 100%;
+    border-radius: 50%;
+  }
+
+  #circle-cover-por {
+    background: url('../images/por.jpg') no-repeat center center;
+    height: 100%;
+    border-radius: 50%;
+  }
+
+  #circle-cover-sk {
+    background: url('../images/sk.jpg') no-repeat center center;
+    height: 100%;
+    border-radius: 50%;
+  }
+
+  /*join form */
+
+  .form-text {
+    font-family: Montserrat, sans-serif;
+    font-weight: 300;
+    color: #093145;
+    display: flex;
+    width: 40%;
+  }
+
+  #form-intro {
+    margin: 2vw auto;
+    font-size: 1.2rem;
+    line-height: 1.5;
+    max-width: 60%;
+    text-align: center;
+  }
+
+  .form {
+    width: 70vw;
+    padding: 2.5vh;
+    border-radius: 0.8vh;
+    margin: 1.5vh auto;
+    background-color: white;
+    float: left
+  }
+
+  #form-container {
+    display: flex;
+    justify-content: center;
+
+  }
+
+  .field-align {
+    display: flex;
+    width: 40%;
+  }
+
+  select {
+    width: 400px;
+    height: 170px;
+    font-size: 16px;
+    padding: 5px;
+    font-family: Montserrat, sans-serif;
+    font-weight: 300;
+    color: #093145;
+  }
+
+  /* Media queries */
+  @media screen and (max-width: 1300px) {
+
+    #prog-right-box,
+    #prog-left-box,
+    #prog-right-box1,
+    #prog-left-box1,
+    #prog-right-box2,
+    #prog-left-box2 {
+      float: none;
+      margin: 1vh auto;
+      max-width: 80vw;
     }
-  
-    #hero-image {
-      height: 60vh;
-      background: url('../images/pexels-patrick-case-3662553_heroimage.jpg') no-repeat center center;
-      background-size: cover;
-    }
-  
-    /*club on home page*/
-  
-    .container {
-      display: flex;
-      width: 100%;
-    }
-  
-    .column {
-      flex: 1;
-      width: 33.3%;
-      padding: 0 1vw;
-      box-sizing: border-box;
-      text-align: center;
-      padding: 1.3vw;
-    }
-  
-    .column h2 {
-      font-size: 1.2rem;
-      font-weight: bold;
-      margin-top: 0;
-    }
-  
-    .column p {
-      font-size: 1.2rem;
-      line-height: 1.5;
-      margin-bottom: 0;
-    }
-  
-    .right_age {
-      position: relative;
-      float: right;
-      margin: 2vh 15vh;
-    }
-  
-    .left_who {
-      position: relative;
-      float: left;
-      margin: 2vh 15vh;
-    }
-  
-    .mid_what {
-      margin: 0 auto;
-      position: relative;
-  
-    }
-  
-    /* How to get involved */
-  
-    #involved-intro {
-  
-      color: red;
-      font-size: 160%;
-      margin: 2vh auto;
-      text-align: center;
-  
-    }
-  
-    .intro {
-      margin: 5vh auto;
-      line-height: 1.5;
-      max-width: 80%;
-      text-align: center;
-      font-size: 1.2rem;
-    }
-  
-    .container-involved {
-      flex-wrap: wrap;
-      justify-content: center;
-      font-size: 1.2rem;
-    }
-  
-    #right_involved {
-      float: right;
-      margin-top: 0;
-      font-size: 1.2rem;
-    }
-  
-    #left_involved {
-      float: left;
-      font-size: 1.2rem;
-    }
-  
-    #mid_involved {
-      margin: 0 auto;
-      font-size: 1.2rem;
-    }
-  
-    /*involved images*/
-  
-    .image-container {
-      display: flex;
-      justify-content: space-between;
-    }
-  
-    .image-container img {
-      width: 33.3%;
+
+    #prog-image {
       height: auto;
     }
-  
-    /* footer */
-  
-    .footer-style {
-  
-      padding: 0;
-      background-color: #093145;
-      color: white;
-      position: absolute;
-      width: 99.9%;
+
+    #coach-right-box,
+    #coach-left-box,
+    #coach-right-box1,
+    #coach-left-box1,
+    #coach-right-box2,
+    #coach-left-box2 {
+      float: none;
+      margin: 1vh auto;
+      max-width: 80vw;
+      border-bottom: 1vh;
     }
-  
-    .footer-style ul {
-      padding: 0;
-      list-style: none;
-      text-align: center;
-      font-size: 1.0rem;
-      line-height: 1.6;
-      margin-bottom: 0;
-    }
-  
-    .footer-style li {
-      padding: 0 1vh;
-    }
-  
-    .footer-style ul a {
-      color: white;
-      text-decoration: none;
-  
-    }
-  
-    .footer-style ul a:hover {
-      color: pink;
-    }
-  
-    .footer-style .social {
-      text-align: center;
-      padding-bottom: 2.5vh;
-      padding-top: 2.5vh;
-    }
-  
-    .footer-style .social>a {
-      font-size: 1.0rem;
-      width: 4vw;
-      height: 4vh;
-      line-height: 4vh;
-      display: inline-block;
-      text-align: center;
-      border-radius: 50%;
-      border: 1px solid #ccc;
-      margin: 0 0.8vh;
-    }
-  
-    .social>li {
-      display: inline;
-      color: white;
-  
-    }
-  
-    .footer-style .social>a:hover {
-      color: pink;
-    }
-  
-    .footer-style .copyright {
-      margin-top: 1.5vh;
-      text-align: center;
-      font-size: 0.8rem;
-      color: #ffffff;
-      margin: bottom 1px;
-    }
-  
-    /* about page*/
-  
-    #about-test {
-      padding: 1rem 0;
-      margin-bottom: 3vh;
-      height: 40vh;
-      background: url('../images/rugbyball.jpg') center center / cover no-repeat fixed;
-    }
-  
-    #mid_about {
-      margin: 0 auto;
-    }
-  
-    #right_column {
-      float: right;
-      margin-top: 0;
-      background-color: #093145;
-      color: white;
-    }
-  
-    #right_column h2 {
-      color: white;
-    }
-  
-    #left_column {
-      float: left;
-      background-color: #093145;
-      color: white;
-    }
-  
-    #left_column h2 {
-      color: white;
-    }
-  
-    #mid_column {
-      margin: 0 auto
-    }
-  
-    #testimonial {
-      margin-top: 1.5vh;
-      text-align: center;
-      font-size: 1.2rem;
-      color: white;
-      background-color: #093145;
-      margin-bottom: 0;
-    }
-  
-    #right_test {
-      float: right;
-      margin-top: 0;
-  
-    }
-  
-    #left_test {
-      float: left;
-    }
-  
-    #mid_test {
-      margin: 0 auto
-    }
-  
-    /* programmes*/
-    #prog-image {
-      padding: 1rem 0;
-      margin-bottom: 3vh;
-      height: 100vh;
-      background: url('../images/rugbyball.jpg') center center / cover no-repeat fixed;
-    }
-  
-    #prog-right-box {
-      background-color: rgba(255, 255, 255, 0.8);
-      position: relative;
-      float: right;
-      margin: 2vh 15vh;
-    }
-  
-    #prog-left-box {
-      background-color: rgba(255, 255, 255, 0.8);
-      position: relative;
-      float: left;
-      margin: 2vh 15vh;
-    }
-  
-    #prog-right-box1 {
-      background-color: rgba(255, 255, 255, 0.8);
-      position: relative;
-      float: right;
-      margin: 2vh 15vh;
-    }
-  
-    #prog-left-box1 {
-      background-color: rgba(255, 255, 255, 0.8);
-      position: relative;
-      float: left;
-      margin: 2vh 15vh;
-    }
-  
-    #prog-right-box2 {
-      background-color: rgba(255, 255, 255, 0.8);
-      position: relative;
-      float: right;
-      margin: 2vh 15vh;
-    }
-  
-    #prog-left-box2 {
-      background-color: rgba(255, 255, 255, 0.8);
-      position: relative;
-      float: left;
-      margin: 2vh 15vh;
-    }
-  
-    .prog-intro {
-      margin: 5vw auto;
-      font-size: 1.2rem;
-      line-height: 1.5;
-      max-width: 90%;
-      text-align: center;
-    }
-  
-    /* coaches */
+
     #coaches-image {
-      padding: 1rem 0;
-      margin-bottom: 3vh;
-      height: 160vh;
-      background: url('../images/rugbyball.jpg') center center / cover no-repeat fixed;
+      height: auto;
     }
-  
-    .coach-intro {
-      margin: 5vh auto;
-      font-size: 1.2rem;
-      line-height: 1.5;
-      max-width: 80%;
+
+    #circle-cover-soc,
+    #circle-cover-fos,
+    #circle-cover-lf,
+    #circle-cover-lm,
+    #circle-cover-por,
+    #circle-cover-sk {
+      float: none;
+      background-size: 40vw;
+    }
+
+    #hero-image {
+      height: 60vh;
+
+    }
+
+    #logo {
+      font-size: 200%;
+      margin-left: 0;
+      margin-right: auto;
+      display: block;
       text-align: center;
     }
-  
-    .circle-container {
-      width: 30vw;
-      max-width: 300px;
-      height: 30vw;
-      max-height: 300px;
-      padding: 3vw;
-      border-style: solid;
-      border-color: #ccc;
-      border-width: 1px;
-      border-radius: 50%;
+
+    .menu {
+      display: none;
+      position: absolute;
+      background-color: white;
+      right: 0;
+      left: 0;
+      text-align: center;
+      padding: 16px 0;
+
+    }
+
+    .menu li:hover {
+      display: inline-block;
+      background-color: white;
+      transition: 0.3s ease;
+
+    }
+
+    .menu li+li {
+      margin-top: 12px;
+
+    }
+
+    input[type=checkbox]:checked~.menu {
+      display: block;
+
+    }
+
+    .hamburger {
+      display: block;
+
+    }
+
+    .dropdown {
+      left: 50%;
+      top: 30px;
+      transform: translateX(35%);
+
+    }
+
+    .dropdown li:hover {
+      background-color: #ffffff;
+
+    }
+
+  }
+
+  /* For medum screen sizes from 1300px wide and down */
+
+  @media screen and (max-width: 1100px) {
+    #menu {
+      clear: left;
+      float: left;
+      margin-left: 30px;
+      margin-bottom: 20px;
+      line-height: 25px;
+    }
+
+    #menu li {
+      float: none;
+      display: inline-block;
+    }
+
+    #cover-text {
+      float: left;
+    }
+
+    #mid_column,
+    #right_column,
+    #left_column {
+      float: none;
+      margin: 1vh auto;
+      max-width: 80vw;
+    }
+
+    .container {
+      flex-direction: column;
+      height: auto;
+      width: 100%;
       margin: 0 auto;
+      text-align: center;
     }
-  
-    #coach-right-box {
-      background-color: rgba(255, 255, 255, 0.8);
-      position: relative;
-      float: right;
-      margin: 2vh 15vh;
+
+    .column {
+      text-align: center;
+      width: 100%;
     }
-  
-    #coach-left-box {
-      background-color: rgba(255, 255, 255, 0.8);
-      position: relative;
-      float: left;
-      margin: 2vh 15vh;
+
+    #form-container {
+      display: flex;
+      justify-content: left;
+      flex-direction: column;
+      height: auto;
+      width: 90%;
+      margin: 5px auto;
+      text-align: left;
     }
-  
-    #coach-right-box1 {
-      background-color: rgba(255, 255, 255, 0.8);
-      position: relative;
-      float: right;
-      margin: 2vh 15vh;
-    }
-  
-    #coach-left-box1 {
-      background-color: rgba(255, 255, 255, 0.8);
-      position: relative;
-      float: left;
-      margin: 2vh 15vh;
-    }
-  
-    #circle-cover-soc {
-      background: url('../images/soc (2).jpg') no-repeat center center;
-      height: 100%;
-      border-radius: 50%;
-    }
-  
-    #circle-cover-fos {
-      background: url('../images/fos.jpg') no-repeat center center;
-      height: 100%;
-      border-radius: 50%;
-    }
-    
-    #circle-cover-por {
-      background: url('../images/por.jpg') no-repeat center center;
-      height: 100%;
-      border-radius: 50%;
-    }
-  
-    #circle-cover-sk {
-      background: url('../images/sk.jpg') no-repeat center center;
-      height: 100%;
-      border-radius: 50%;
-    }
-  
-    /*join form */
-  
+
     .form-text {
       font-family: Montserrat, sans-serif;
       font-weight: 300;
       color: #093145;
+      display: flex;
+      width: 80%;
     }
-  
+
     #form-intro {
-      margin: 2vw auto;
+      
       font-size: 1.2rem;
       line-height: 1.5;
-      max-width: 60%;
-      text-align: center;
+      max-width: 80%;
+      text-align: left;
     }
-  
+
     .form {
       width: 70vw;
       padding: 2.5vh;
@@ -504,20 +707,14 @@ input[type=checkbox]{
       background-color: white;
       float: left
     }
-  
-    #form-container {
-      display: flex;
-      justify-content: center;
-  
-    }
-  
+
     .field-align {
       display: flex;
-      width: 40%;
+      width: 80%;
     }
 
     select {
-      width: 400px;
+      width: 90%;
       height: 170px;
       font-size: 16px;
       padding: 5px;
@@ -525,154 +722,4 @@ input[type=checkbox]{
       font-weight: 300;
       color: #093145;
     }
-  
-    /* Media queries */
-    @media screen and (max-width: 1300px) { 
-  
-      #prog-right-box,
-      #prog-left-box,
-      #prog-right-box1,
-      #prog-left-box1,
-      #prog-right-box2,
-      #prog-left-box2 {
-        float: none;
-        margin: 1vh auto;
-        max-width: 80vw;
-      }
-  
-      #prog-image {
-        height: auto;
-      }
-  
-      #coach-right-box,
-      #coach-left-box,
-      #coach-right-box1,
-      #coach-left-box1,
-      #coach-right-box2,
-      #coach-left-box2 {
-        float: none;
-        margin: 1vh auto;
-        max-width: 80vw;
-        border-bottom: 1vh;
-      }
-  
-      #coaches-image {
-        height: auto;
-      }
-  
-      #circle-cover-soc,
-      #circle-cover-fos,
-      #circle-cover-lf,
-      #circle-cover-lm,
-      #circle-cover-por,
-      #circle-cover-sk {
-        float: none;
-        background-size: 40vw;
-      }
-  
-      #hero-image {
-        height: 60vh;
-  
-      }
-  
-      #logo {
-        font-size: 200%;
-        margin-left: 0;
-        margin-right: auto;
-        display: block;
-        text-align: center;
-      }
-  
-      .menu { 
-        display:none;
-        position: absolute;
-        background-color:white;
-        right: 0;
-        left: 0;
-        text-align: center;
-        padding: 16px 0;
-        
-        }
-        
-        .menu li:hover {
-        display: inline-block;
-        background-color:white;
-        transition: 0.3s ease;
-        
-        }
-        
-        .menu li + li {
-          margin-top: 12px;
-        
-        }
-        
-        input[type=checkbox]:checked ~ .menu{
-          display: block;
-        
-        }
-        
-        .hamburger {
-          display: block;
-        
-        }
-        
-        .dropdown {
-          left: 50%;
-          top: 30px;
-          transform: translateX(35%);
-          
-          }
-          
-        .dropdown li:hover {
-          background-color: #ffffff;
-          
-          }
-          
-    }
-  
-    /* For medum screen sizes from 1300px wide and down */
-  
-    @media screen and (max-width: 1100px) {
-      #menu {
-        clear: left;
-        float: left;
-        margin-left: 30px;
-        margin-bottom: 20px;
-        line-height: 25px;
-      }
-  
-      #menu li {
-        float: none;
-        display: inline-block;
-      }
-  
-      #cover-text {
-        float: left;
-      }
-  
-      #mid_column,
-      #right_column,
-      #left_column {
-        float: none;
-        margin: 1vh auto;
-        max-width: 80vw;
-      }
-  
-      .container {
-        flex-direction: column;
-        height: auto;
-        width: 100%;
-        margin: 0 auto;
-        text-align: center;
-      }
-  
-      .column {
-        text-align: center;
-        width: 100%;
-      }
-      
-      #form-container {
-        display: flex;
-        justify-content: center;
-      }
-    }
+  }
