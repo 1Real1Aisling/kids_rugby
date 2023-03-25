@@ -81,13 +81,13 @@
   }
 
   .column h2 {
-    font-size: 3vh;
+    font-size: 1.2rem;
     font-weight: bold;
     margin-top: 0;
   }
 
   .column p {
-    font-size: 3vh;
+    font-size: 1.2rem;
     line-height: 1.5;
     margin-bottom: 0;
   }
@@ -126,29 +126,29 @@
     line-height: 1.5;
     max-width: 80%;
     text-align: center;
-    font-size: 3vh;
+    font-size: 1.2rem;
   }
 
   .container-involved {
     flex-wrap: wrap;
     justify-content: center;
-    font-size: 3vh;
+    font-size: 1.2rem;
   }
 
   #right_involved {
     float: right;
     margin-top: 0;
-    font-size: 3vh;
+    font-size: 1.2rem;
   }
 
   #left_involved {
     float: left;
-    font-size: 3vh;
+    font-size: 1.2rem;
   }
 
   #mid_involved {
     margin: 0 auto;
-    font-size: 3vh;
+    font-size: 1.2rem;
   }
 
   /*involved images*/
@@ -178,7 +178,7 @@
     padding: 0;
     list-style: none;
     text-align: center;
-    font-size: 3vh;
+    font-size: 1.0rem;
     line-height: 1.6;
     margin-bottom: 0;
   }
@@ -204,7 +204,7 @@
   }
 
   .footer-style .social>a {
-    font-size: 2.4vh;
+    font-size: 1.0rem;
     width: 4vw;
     height: 4vh;
     line-height: 4vh;
@@ -228,7 +228,7 @@
   .footer-style .copyright {
     margin-top: 1.5vh;
     text-align: center;
-    font-size: 2vh;
+    font-size: 0.8rem;
     color: #ffffff;
     margin: bottom 1px;
   }
@@ -274,7 +274,7 @@
   #testimonial {
     margin-top: 1.5vh;
     text-align: center;
-    font-size: 2vh;
+    font-size: 1.2rem;
     color: white;
     background-color: #093145;
     margin-bottom: 0;
@@ -346,7 +346,7 @@
 
   .prog-intro {
     margin: 5vw auto;
-    font-size: 3vh;
+    font-size: 1.2rem;
     line-height: 1.5;
     max-width: 90%;
     text-align: center;
@@ -362,7 +362,7 @@
 
   .coach-intro {
     margin: 5vh auto;
-    font-size: 3vh;
+    font-size: 1.2rem;
     line-height: 1.5;
     max-width: 80%;
     text-align: center;
@@ -469,7 +469,7 @@
 
   #form-intro {
     margin: 2vw auto;
-    font-size: 3vh;
+    font-size: 1.2rem;
     line-height: 1.5;
     max-width: 60%;
     text-align: center;
